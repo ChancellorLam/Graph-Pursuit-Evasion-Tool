@@ -1,7 +1,9 @@
 from graph import create_franklin_graph
+from graph import create_loupekine_snark
 
 if __name__ == '__main__':
     franklin_graph = create_franklin_graph()
+    loupekine_snark = create_loupekine_snark()
     print("How many nodes would you like to probe?")
     num_probes = int(input())
 
@@ -12,7 +14,7 @@ if __name__ == '__main__':
     location_list = []
     for each_probe in probe_locations:
         # print(distances)
-        distances = franklin_graph.get_distances_from_node(each_probe)
+        distances = loupekine_snark.get_distances_from_node(each_probe)
         location_list.append(distances)
 
     result = {}

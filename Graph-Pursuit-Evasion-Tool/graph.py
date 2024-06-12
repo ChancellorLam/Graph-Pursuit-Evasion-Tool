@@ -70,6 +70,8 @@ def create_franklin_graph():
 
 
 def create_loupekine_snark():
+    loupekine_snark = Graph()
+
     a = Node("A", ["B", "C", "K"])
     b = Node("B", ["A", "F", "O"])
     c = Node("C", ["A", "H", "L"])
@@ -92,3 +94,28 @@ def create_loupekine_snark():
     t = Node("T", ["P", "Q", "V"])
     u = Node("U", ["K", "S", "V"])
     v = Node("V", ["O", "T", "U"])
+
+    loupekine_snark.add_node(a)
+    loupekine_snark.add_node(b)
+    loupekine_snark.add_node(c)
+    loupekine_snark.add_node(d)
+    loupekine_snark.add_node(e)
+    loupekine_snark.add_node(f)
+    loupekine_snark.add_node(g)
+    loupekine_snark.add_node(h)
+    loupekine_snark.add_node(i)
+    loupekine_snark.add_node(j)
+    loupekine_snark.add_node(k)
+    loupekine_snark.add_node(l)
+    loupekine_snark.add_node(m)
+    loupekine_snark.add_node(n)
+    loupekine_snark.add_node(o)
+    loupekine_snark.add_node(p)
+    loupekine_snark.add_node(q)
+    loupekine_snark.add_node(r)
+    loupekine_snark.add_node(s)
+    loupekine_snark.add_node(t)
+    loupekine_snark.add_node(u)
+    loupekine_snark.add_node(v)
+
+    return loupekine_snark
