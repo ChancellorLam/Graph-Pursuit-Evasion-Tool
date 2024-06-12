@@ -9,6 +9,6 @@ if __name__ == '__main__':
     for i in range(0, num_probes):
         print("What node would you like to probe?")
         user_input = probe_locations.append(input().upper())
-    for probe in probe_locations:
-        distances = franklin_graph.get_distances_from_node(probe)
+    for each_probe in probe_locations:
+        distances = franklin_graph.get_distances_from_node(each_probe)
         print(distances)
