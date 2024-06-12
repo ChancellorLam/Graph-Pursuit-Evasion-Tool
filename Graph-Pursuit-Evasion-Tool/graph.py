@@ -67,3 +67,28 @@ def create_franklin_graph():
     franklin_graph.add_node(l)
 
     return franklin_graph
+
+
+def create_loupekine_snark():
+    a = Node("A", ["B", "C", "K"])
+    b = Node("B", ["A", "F", "O"])
+    c = Node("C", ["A", "H", "L"])
+    d = Node("D", ["E", "G", "L"])
+    e = Node("E", ["D", "J", "N"])
+    f = Node("F", ["B", "I", "N"])
+    g = Node("G", ["D", "H", "K"])
+    h = Node("H", ["C", "G", "M"])
+    i = Node("I", ["F", "J", "M"])
+    j = Node("J", ["E", "I", "O"])
+    k = Node("K", ["A", "G", "U"])
+    l = Node("L", ["C", "D", "Q"])
+    m = Node("M", ["H", "I", "P"])
+    n = Node("N", ["E", "F", "R"])
+    o = Node("O", ["B", "J", "V"])
+    p = Node("P", ["M", "S", "T"])
+    q = Node("Q", ["L", "R", "T"])
+    r = Node("R", ["N", "Q", "S"])
+    s = Node("S", ["P", "R", "U"])
+    t = Node("T", ["P", "Q", "V"])
+    u = Node("U", ["K", "S", "V"])
+    v = Node("V", ["O", "T", "U"])
