@@ -54,10 +54,17 @@ if __name__ == '__main__':
                 occurrences[values_tuple] = 0
             occurrences[values_tuple] += 1
 
-        # Print the results with asterisks for non-unique values
+        uniques = 0
+        non_uniques = 0
+        # print number of uniques and non-uniques as well as results with asterisks for unique values
         for key, values in result.items():
             values_tuple = tuple(values)
             if occurrences[values_tuple] > 1:
                 print(f"{key}: {values}")
+                non_uniques = non_uniques + 1
             else:
                 print(f"{key}: {values}*")
+                uniques = uniques + 1
+
+        print("Uniques: " + str(uniques))
+        print("Non-Uniques: " + str(non_uniques))
