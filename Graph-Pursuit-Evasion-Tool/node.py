@@ -3,5 +3,8 @@ class Node:
         self.name = name
         self.neighbors = neighbors
 
+    def get_name(self):
+        return self.name
+
     def get_neighbors(self):
         return self.neighbors
